@@ -473,7 +473,7 @@ class QueueJobRunner:
 
     def get_db_names(self):
         if config["db_name"]:
-            db_names = config["db_name"].split(",")
+            db_names = config["db_name"]
         else:
             db_names = odoo.service.db.list_dbs(True)
         return db_names
